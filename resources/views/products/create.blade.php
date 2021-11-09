@@ -9,20 +9,26 @@
         </span>
         </button>
     </div>
-    <form action="{{$action}}" method="post" data-action="make_ajax" data-action-after="reload" >
+    <form action="{{$action}}" method="post" data-action="make_ajax_file" data-action-after="reload" >
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="label" class="control-label">Label</label>
-                        <input type='text' name="label" id="label" class="form-control" required="" value="Test"  />
+                        <input type='text' name="label" id="label" class="form-control" required="" />
                     </div>
                 </div>
                 
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="description" class="control-label">Description</label>
-                        <textarea  name="description" id="description" class="form-control"  /></textarea>
+                        <textarea  name="description" id="description" class="form-control"  ></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="image" class="control-label">Image</label>
+                        <input type="file"  name="image" id="image" />
                     </div>
                 </div>
             </div>

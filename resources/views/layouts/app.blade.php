@@ -26,6 +26,9 @@
                   <li class="nav-item">
                      <a class="nav-link" href="{{url('dashboard/categories')}}">Categories</a>
                   </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{url('dashboard/products')}}">Products</a>
+                  </li>
                   
                </ul>
             </div>
