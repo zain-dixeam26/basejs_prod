@@ -30,6 +30,7 @@
                  <th scope="col"># ({{$count}})</th>
                  <th scope="col">Label</th>
                  <th scope="col">Description</th>
+                 <th scope="col">Category</th>
                  <th scope="col">Action</th>
                </tr>
              </thead>
@@ -39,8 +40,15 @@
                <tr>
                  <td><input type="checkbox" name="user[]" value="19"></th>
                  <td scope="row">{{$sindex++}}</th>
-                 <td data-id="{{$val['cat_id']}}" data-input="text" data-field="label">{{$val['label']}}</td>
-                 <td data-id="{{$val['cat_id']}}" data-input="textarea" data-field="description">{{$val['description']}}</td>
+                 <td data-id="{{$val['pro_id']}}" data-input="text" data-field="label">{{$val['label']}}</td>
+                 <td data-id="{{$val['pro_id']}}" data-input="textarea" data-field="description">{{$val['description']}}</td>
+                 <td data-id="{{$val['pro_id']}}" data-input="select" data-field="cat_id">
+                  <select type='text' name="cat_id" id="cat_id" required="" >
+                      @foreach($categories  as $key=>$ival)
+                      <option value="{{$ival['cat_id']}}" @if($ival['cat_id'] == $val['cat_id']) selected @endif>{{$ival['label']}}</option>
+                      @endforeach
+                  </select>
+                 </td>
                  <td>
                    <a data-action="delete_record"  href="javascript:void(0);" data-url="{{url($module['action'].'/delete/'.$val[$module['db_key']])}}" >Delete</a> | <a href="#data_modal" data-toggle="modal"  data-url="{{url($module['action'].'/edit/'.$val[$module['db_key']])}}" data-action="data_modal"> Edit </a>
                  </td>

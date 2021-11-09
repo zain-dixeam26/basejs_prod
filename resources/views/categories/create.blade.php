@@ -15,7 +15,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="label" class="control-label">Label</label>
-                        <input type='text' name="label" id="label" class="form-control" required="" value="Test"  />
+                        <input type='text' name="label" id="label" class="form-control" required="" />
                     </div>
                 </div>
                 

@@ -14,11 +14,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
+                        <label for="cat_id" class="control-label">Category</label>
+                        
+                        <select type='text' name="cat_id" id="cat_id" class="form-control" required="" >
+                            @foreach($categories  as $key=>$val)
+                            <option value="{{$val['cat_id']}}">{{$val['label']}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
                         <label for="label" class="control-label">Label</label>
                         <input type='text' name="label" id="label" class="form-control" required="" />
                     </div>
                 </div>
-                
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="description" class="control-label">Description</label>

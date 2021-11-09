@@ -142,7 +142,7 @@ class CategoryController extends Controller
         return view($this->view.'edit',$data);
     }
     public function delete($id) {
-        //Categories::destroy($id);
+        Categories::destroy($id);
         $response = array('flag'=>true,'msg'=>$this->singular.' has been deleted.');
         echo json_encode($response); return;
     }

@@ -47,7 +47,8 @@ class ProductController extends Controller
                     "page_title"=>$this->plural." List",
                     "page_heading"=>$this->plural.' List',
                     "breadcrumbs"=>array("#"=>$this->plural." List"),
-                    "module"=>array('type'=>$this->type,'singular'=>$this->singular,'plural'=>$this->plural,'view'=>$this->view,'action'=>$this->action,'db_key'=>$this->db_key)
+                    "module"=>array('type'=>$this->type,'singular'=>$this->singular,'plural'=>$this->plural,'view'=>$this->view,'action'=>$this->action,'db_key'=>$this->db_key),
+                    "categories" => Categories::all()
                 );
         
         
@@ -107,7 +108,8 @@ class ProductController extends Controller
                     "page_title"=>"Add ".$this->singular,
                     "page_heading"=>"Add ".$this->singular,
                     "breadcrumbs"=>array("dashboard"=>"Dashboard","#"=>$this->plural." List"),
-                    "action"=> url($this->action.'/create')
+                    "action"=> url($this->action.'/create'),
+                    "categories" => Categories::all()
                 );
         return view($this->view.'create',$data);
     }
