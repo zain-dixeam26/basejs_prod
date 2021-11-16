@@ -48,7 +48,7 @@
                "site_url": "{{url('/')}}",
                "current_url":"{{URL::current()}}",
                "lang": "en",
-               "voice_input":true,
+               "notif": {"type":"toastr", "options":[]},
             }
          );
       </script>
