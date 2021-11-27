@@ -31,6 +31,12 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
+                        <label for="price" class="control-label">Price</label>
+                        <input type='text' name="price" id="price" class="form-control" required="" data-mask="number"/>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
                         <label for="description" class="control-label">Description</label>
                         <textarea  name="description" id="description" class="form-control"  ></textarea>
                     </div>

@@ -50,4 +50,10 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/products/delete/{id?}'       , 'ProductController@delete');
 
     Route::post('/products/update/_bulk'      , 'ProductController@_bulk');
+
+
+    /*
+    Demos
+    */
+    Route::get('/input-masking' , 'DemoController@inputMasking');
 });
