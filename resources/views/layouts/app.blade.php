@@ -38,7 +38,16 @@
                       
                     </div>
                   </li>
+
                </ul>
+               <ul class="nav navbar-nav navbar-right">             
+                    <li style="align-content:center">
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-danger" >{{ __('Logout') }}</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                        </form>
+                    </li>
+                </ul>
             </div>
          </nav>
          <main role="main" class="container">
