@@ -49,6 +49,21 @@
         <input type="text" class="form-control" data-mask="lowercase" >
         <small class="form-text">Attribute <code>data-mask="lowercase"</code> </small>
       </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="price">Slugify Title</label>
+            <input type="text" class="form-control" data-mask="slugify" data-target="#slugiID" >
+            <small class="form-text">Attribute <code>data-mask="slugify"</code>  | <code>data-target="slugiID"</code>, where data-target is jquery selector for slug result</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="price">Slugify Url (data-target)</label>
+            <input type="text" class="form-control"  id="slugiID" >
+          </div>
+        </div>
+      </div>
       
     </form>
 </div>
