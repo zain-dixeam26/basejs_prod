@@ -39,6 +39,17 @@
         <input type="text" class="form-control" data-mask="datetime" data-format="mm/dd/yyyy">
         <small class="form-text text-muted">Attribute <code>data-mask="datetime"</code> for format <code>data-format="mm/dd/yyyy"</code></small>
       </div>
+      <div class="form-group">
+        <label for="price">Uppercase</label>
+        <input type="text" class="form-control" data-mask="uppercase" >
+        <small class="form-text">Attribute <code>data-mask="uppercase"</code> </small>
+      </div>
+      <div class="form-group">
+        <label for="price">Lowercase</label>
+        <input type="text" class="form-control" data-mask="lowercase" >
+        <small class="form-text">Attribute <code>data-mask="lowercase"</code> </small>
+      </div>
+      
     </form>
 </div>
 @endsection
