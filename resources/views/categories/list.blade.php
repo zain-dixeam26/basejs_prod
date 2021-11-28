@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-12">
-           <table class="table table-bordered" id="editable" data-url="{{url($module['action'].'/edit')}}">
+           <table class="table table-bordered" data-action="editable" data-url="{{url($module['action'].'/edit')}}">
              <thead>
                <tr>
                  <th scope="col"><input type="checkbox"></th>

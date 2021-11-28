@@ -1,4 +1,4 @@
-@extends('layouts.app')
+7@extends('layouts.app')
 @section('content')
 <div class="container">
    <form action="{{url($module['action'].'/update/_bulk')}}" data-action="bulk-action" method="post">
@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-12">
-           <table class="table table-bordered" id="editable" data-url="{{url($module['action'].'/edit')}}">
+           <table class="table table-bordered" data-action="editable" data-url="{{url($module['action'].'/edit')}}">
              <thead>
                <tr>
                  <th scope="col"><input type="checkbox"></th>
