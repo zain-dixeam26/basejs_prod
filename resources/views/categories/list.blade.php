@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="p-3 bg-white rounded box-shadow">
    <form action="{{url($module['action'].'/update/_bulk')}}" data-action="bulk-action" method="post">
      <div class="row" style="margin-bottom: 20px;">
         <div class="col-md-6">
