@@ -43,6 +43,16 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
+                        <label for="feature" class="control-label">Feature</label>
+                        <select class="form-control" data-s2="true"  name="feature">
+                          <option value="warm">Warm</option>
+                          <option value="shining">Shining</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="form-group">
                         <label for="image" class="control-label">Image</label>
                         <input type="file"  name="image" id="image" />
                     </div>

@@ -56,4 +56,5 @@ Route::prefix('dashboard')->group(function () {
     Demos
     */
     Route::get('/input-masking' , 'DemoController@inputMasking');
+    Route::get('/select2' , 'DemoController@select2');
 });

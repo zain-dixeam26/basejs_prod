@@ -35,7 +35,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{url('dashboard/input-masking')}}">Input Masking</a>
-                      
+                      <a class="dropdown-item" href="{{url('dashboard/select2')}}">Select2</a>
                     </div>
                   </li>
 
@@ -67,6 +67,7 @@
                "current_url":"{{URL::current()}}",
                "lang": "en",
                "imasking":true,
+               "select2": true,
          
                "notif": {"type":"toastr", "options":[]},
             }

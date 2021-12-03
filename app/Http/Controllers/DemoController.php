@@ -30,6 +30,18 @@ class DemoController extends Controller
         
         return view($this->view.'.input-masking',$data);
     }
+    public function select2(Request $request)
+    {
+        $data   = array(
+                    "page_title"=>"Select2 Demo",
+                    "page_heading"=>"Select2 Demo",
+                    "breadcrumbs"=>array("#"=>"Demo Select2 Demo"),
+                    "module"=>array('type'=>$this->type,'singular'=>$this->singular,'plural'=>$this->plural,'view'=>$this->view,'action'=>$this->action,'db_key'=>$this->db_key)
+                );
+        
+        
+        return view($this->view.'.select2',$data);
+    }
     
 
 }
