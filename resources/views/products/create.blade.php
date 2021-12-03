@@ -50,6 +50,14 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="feature" class="control-label">Product</label>
+                        <select class="form-control" data-s2-ajax="true" data-placeholder="Select a Product" data-url="{{url($module['action'].'/filter')}}" multiple="" >
+                          <option value=""></option>
+                        </select>
+                    </div>
+                </div>
                 
                 <div class="col-md-12">
                     <div class="form-group">

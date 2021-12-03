@@ -22,6 +22,13 @@
         </select>
         <small class="form-text text-muted">Attribute <code>data-s2="true"</code> for label <code>data-placeholder="Select a Feature"</code></small>
       </div>
+      <div class="form-group">
+        <label for="price">Select Ajax</label>
+        <select class="form-control" data-s2-ajax="true" data-placeholder="Select a Product" data-url="{{url($module['action'].'/filter')}}" multiple="" >
+          <option value=""></option>
+        </select>
+        <small class="form-text text-muted">Attribute <code>data-s2-ajax="true"</code> for label <code>data-placeholder="Select a Product"</code> | For api endpoint data-url=""</small>
+      </div>
     </form>
 </div>
 @endsection

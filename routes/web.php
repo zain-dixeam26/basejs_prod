@@ -50,6 +50,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/products/delete/{id?}'       , 'ProductController@delete');
 
     Route::post('/products/update/_bulk'      , 'ProductController@_bulk');
+    Route::get('/products/filter'      , 'ProductController@filter');
 
 
     /*

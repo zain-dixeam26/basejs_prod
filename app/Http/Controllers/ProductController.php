@@ -109,6 +109,7 @@ class ProductController extends Controller
                     "page_heading"=>"Add ".$this->singular,
                     "breadcrumbs"=>array("dashboard"=>"Dashboard","#"=>$this->plural." List"),
                     "action"=> url($this->action.'/create'),
+                    "module"=>array('type'=>$this->type,'singular'=>$this->singular,'plural'=>$this->plural,'view'=>$this->view,'action'=>$this->action,'db_key'=>$this->db_key),
                     "categories" => Categories::all()
                 );
         return view($this->view.'create',$data);
@@ -154,6 +155,16 @@ class ProductController extends Controller
         //Products::destroy($id);
         $response = array('flag'=>true,'msg'=>$this->singular.' has been deleted.','action'=>'reload');
         echo json_encode($response); return;
+    }
+    public function filter(Request $request) {
+        $data = $request->all();
+        $records   = new Products;
+        $records   = Products::where("label",'like',"%".$request->term."%")->get()->toArray();
+        $data = [];
+        foreach ($records as $key => $val)
+            $data[] = array("text"=>$val['label'], "id"=>$val['pro_id']);
+           
+        echo json_encode($data); return;
     }
 
 }
