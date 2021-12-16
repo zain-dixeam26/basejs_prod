@@ -42,6 +42,19 @@ class DemoController extends Controller
         
         return view($this->view.'.select2',$data);
     }
+    public function formValidation(Request $request)
+    {
+        $data   = array(
+                    "page_title"=>"Form Validation Demo",
+                    "page_heading"=>"Form Validation Demo",
+                    "breadcrumbs"=>array("#"=>"Demo Form Validation Demo"),
+                    "module"=>array('type'=>$this->type,'singular'=>$this->singular,'plural'=>$this->plural,'view'=>$this->view,'action'=>$this->action,'db_key'=>$this->db_key),
+                    "action"=> url($this->action.'/create')
+                );
+        
+        
+        return view($this->view.'.form-validation',$data);
+    }
     
 
 }

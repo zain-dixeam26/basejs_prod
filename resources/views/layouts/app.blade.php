@@ -36,6 +36,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{url('dashboard/input-masking')}}">Input Masking</a>
                       <a class="dropdown-item" href="{{url('dashboard/select2')}}">Select2</a>
+                      <a class="dropdown-item" href="{{url('dashboard/form-validation')}}">Form Validation</a>
                     </div>
                   </li>
 

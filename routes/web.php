@@ -58,4 +58,5 @@ Route::prefix('dashboard')->group(function () {
     */
     Route::get('/input-masking' , 'DemoController@inputMasking');
     Route::get('/select2' , 'DemoController@select2');
+    Route::get('/form-validation' , 'DemoController@formValidation');
 });
