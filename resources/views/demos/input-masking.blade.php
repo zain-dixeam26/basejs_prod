@@ -12,12 +12,12 @@
       <div class="form-group">
         <label>Decimal with Point</label>
         <input type="text" class="form-control" data-mask="decimal">
-        <small class="form-text text-muted">Attribute <code>data-mask="decimal"</code>| Placeholder <code>data-placeholder="0"</code></small>
+        <small class="form-text text-muted">Attribute <code>data-mask="decimal"</code></small>
       </div>
       <div class="form-group">
         <label>Decimal without point</label>
         <input type="text" class="form-control" data-mask="decimal" data-negtive="false" data-point="false" data-placeholder="">
-        <small class="form-text text-muted">Attribute <code>data-mask="decimal"</code> | Allow Negtive <code>data-negtive="false"</code> | Allow Point <code>data-point="false"</code> | Placeholder <code>data-placeholder="0"</code></small>
+        <small class="form-text text-muted">Attribute <code>data-mask="decimal"</code> | Allow Negtive <code>data-negtive="false"</code> | Allow Point <code>data-point="false"</code> | Placeholder <code>data-placeholder=""</code></small>
 
       </div>
       <div class="form-group">
