@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <div class="p-3 bg-white rounded box-shadow">
+  
+    <h3 >{{$module['plural']}} ({{$count}})</h3>
+  
    <form action="{{url($module['action'].'/update/_bulk')}}" data-action="bulk-action" method="post">
      <div class="row" style="margin-bottom: 20px;">
         <div class="col-md-6">
@@ -26,11 +29,11 @@
            <table class="table table-bordered" data-action="editable" data-url="{{url($module['action'].'/edit')}}">
              <thead>
                <tr>
-                 <th scope="col"><input type="checkbox"></th>
-                 <th scope="col"># ({{$count}})</th>
-                 <th scope="col">Label</th>
-                 <th scope="col">Description</th>
-                 <th scope="col">Action</th>
+                 <th scope="col" width="5%"><input type="checkbox"></th>
+                 <th scope="col" width="5%"># </th>
+                 <th scope="col" width="20%">Label</th>
+                 <th scope="col" width="40%">Description</th>
+                 <th scope="col" width="20%">Action</th>
                </tr>
              </thead>
              <tbody>
